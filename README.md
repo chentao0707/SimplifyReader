@@ -6,6 +6,8 @@
 
 ###效果图
 
+![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/all_in_one.jpg)
+
 ###新闻简读
 
 * 介绍：API使用的是凤凰新闻客户端的接口，我只是简单的获取了新闻的列表和详情数据，由于api和凤凰新闻客户端完全一致，鉴于侵权问题我就不开源出来了。至于接口是如何获取的？Google，百度，调试获取日志，我能说的只有这么多。
