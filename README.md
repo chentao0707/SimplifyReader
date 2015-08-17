@@ -4,6 +4,8 @@
 
 ---
 
+###效果图
+
 ###新闻简读
 
 * 介绍：API使用的是凤凰新闻客户端的接口，我只是简单的获取了新闻的列表和详情数据，由于api和凤凰新闻客户端完全一致，鉴于侵权问题我就不开源出来了。至于接口是如何获取的？Google，百度，调试获取日志，我能说的只有这么多。
@@ -38,6 +40,98 @@
 ###致谢
 
 * 苦于没有后台支持，找到这些支持JSON数据格式的开放接口可谓是煞费苦心，前前后后尝试了很多次才找到，也感谢网友们提供的接口；界面的原型都是我自己构思的，后期的切图美化主要是Chris帮忙完成的，很感谢他业余时间和我一起完成这样一个APP；项目中大量使用了Github上面优秀的开源项目，我会列举出来！其他一些代码片段就不一一致谢了，很感谢这些开放源码的技术大牛们，让我学到了很多；最后如果觉得我的项目对你有所帮助，请点击我的支付宝付款码请我喝杯咖啡把~
+
+###开源项目说明
+
+####ButterKnife
+
+* **Link:** [https://github.com/JakeWharton/butterknife](https://github.com/JakeWharton/butterknife)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####AndroidTagGroup 
+
+* **Link:** [https://github.com/2dxgujun/AndroidTagGroup](https://github.com/2dxgujun/AndroidTagGroup)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####NineOldAndroids 
+
+* **Link:** [https://github.com/JakeWharton/NineOldAndroids](https://github.com/JakeWharton/NineOldAndroids) 
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####SystemBarTint
+
+* **Link:** [https://github.com/jgilfelt/SystemBarTint](https://github.com/jgilfelt/SystemBarTint)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####Android-Universal-Image-Loader
+
+* **Link:** [https://github.com/nostra13/Android-Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####PhotoView
+
+* **Link:** [https://github.com/chrisbanes/PhotoView](https://github.com/chrisbanes/PhotoView)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####OkHttp 
+
+* **Link:** [https://github.com/square/okhttp](https://github.com/square/okhttp)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####SmartTabLayout
+
+* **Link:** [https://github.com/ogaclejapan/SmartTabLayout](https://github.com/ogaclejapan/SmartTabLayout)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####SwipeBackLayout
+
+* **Link:** [https://github.com/ikew0ng/SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####ImageBlurring
+
+* **Link:** [https://github.com/qiujuer/ImageBlurring](https://github.com/qiujuer/ImageBlurring)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####PinterestLikeAdapterView
+
+* **Link:** [https://github.com/dodola/PinterestLikeAdapterView](https://github.com/dodola/PinterestLikeAdapterView)
+
+* **License:** `Licensed under the Apache License, Version 2.0 (the "License");`
+
+####Material-Dialogs
+
+* **Link:** [https://github.com/afollestad/material-dialogs](https://github.com/afollestad/material-dialogs)
+
+####EventBus
+
+* **Link:** [https://github.com/greenrobot/EventBus](https://github.com/greenrobot/EventBus)
+
+####Gson 
+
+* **Link:** [https://github.com/google/gson](https://github.com/google/gson)
+
+####Volley 
+
+* **Link:** [https://android.googlesource.com/platform/frameworks/volley](https://android.googlesource.com/platform/frameworks/volley)
+
+####Umeng 
+
+* **Link:** [http://www.umeng.com/](http://www.umeng.com/)
+
+####Youku
+
+* **Link:** [http://open.youku.com/](http://open.youku.com/)
 
 ###License
 ```
