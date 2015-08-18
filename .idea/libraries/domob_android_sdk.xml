@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="domob_android_sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/domob_android_sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

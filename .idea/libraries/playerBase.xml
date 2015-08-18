@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="playerBase">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/playerBase.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

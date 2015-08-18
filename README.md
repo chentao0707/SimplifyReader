@@ -166,6 +166,10 @@
 * **Github:** [https://github.com/skillcollege](https://github.com/skillcollege)
 * **Blog:** [https://skillcollege.github.io](https://skillcollege.github.io) | [http://blog.csdn.net/skillcollege](http://blog.csdn.net/skillcollege)
 
+###项目主页
+
+[https://github.com/SkillCollege/SimplifyReader](https://github.com/SkillCollege/SimplifyReader)
+
 ###License
 
 ```

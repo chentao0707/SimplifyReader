@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tracking">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/tracking.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
