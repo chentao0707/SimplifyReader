@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simplifyreader by SkillCollege</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Simplifyreader</h1>
+      <h2 class="project-tagline">一款基于Google Material Design设计开发的Android客户端，包括新闻简读，图片浏览，视频爽看 ，音乐轻听以及二维码扫描五个子模块。项目采取的是MVP架构开发，由于还是摸索阶段，可能不是很规范。但基本上应该是这么个套路，至少我个人认为是这样的~恩，就是这样的！</h2>
+      <a href="https://github.com/SkillCollege/SimplifyReader" class="btn">View on GitHub</a>
+      <a href="https://github.com/SkillCollege/SimplifyReader/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/SkillCollege/SimplifyReader/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="简阅" class="anchor" href="#%E7%AE%80%E9%98%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>简阅</h3>
+
+<p>一款基于Google Material Design设计开发的Android客户端，包括新闻简读，图片浏览，视频爽看 ，音乐轻听以及二维码扫描五个子模块。项目采取的是MVP架构开发，由于还是摸索阶段，可能不是很规范。但基本上应该是这么个套路，至少我个人认为是这样的~恩，就是这样的！</p>
+
+<h3>
+<a id="效果图" class="anchor" href="#%E6%95%88%E6%9E%9C%E5%9B%BE" aria-hidden="true"><span class="octicon octicon-link"></span></a>效果图</h3>
+
+<p><img src="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/all_in_one.jpg" alt="image"></p>
+
+<p><img src="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/project.gif" alt="image"></p>
+
+<p><img src="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/qrcode.gif" alt="image"></p>
+
+<p><img src="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/project_struct.png" alt="image"></p>
+
+<h3>
+<a id="demo下载" class="anchor" href="#demo%E4%B8%8B%E8%BD%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo下载</h3>
+
+<p><a href="https://fir.im/simplifyreader">火速跳转</a> | <a href="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/apks/app-debug.apk">Download-APK</a></p>
+
+<p><img src="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/download.png" alt="image"></p>
+
+<h3>
+<a id="模块分析" class="anchor" href="#%E6%A8%A1%E5%9D%97%E5%88%86%E6%9E%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>模块分析</h3>
+
+<h4>
+<a id="新闻简读" class="anchor" href="#%E6%96%B0%E9%97%BB%E7%AE%80%E8%AF%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>新闻简读</h4>
+
+<ul>
+<li><p>介绍：API使用的是凤凰新闻客户端的接口，我只是简单的获取了新闻的列表和详情数据，由于api和凤凰新闻客户端完全一致，鉴于侵权问题我就不开源出来了。至于接口是如何获取的？Google，百度，调试获取日志，我能说的只有这么多。</p></li>
+<li><p>功能：列表页使用自定义的ListView(自动加载更多）显示新闻列表，详情使用的是WebView加载，支持滑动返回。对于多图
+新闻的处理，使用的和主流新闻客户端类似，滑动切换多张图片，可双指缩放图片大小！</p></li>
+</ul>
+
+<h4>
+<a id="图片浏览" class="anchor" href="#%E5%9B%BE%E7%89%87%E6%B5%8F%E8%A7%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>图片浏览</h4>
+
+<ul>
+<li><p>介绍：API使用的是百度图片的搜索接口，由于网上有很多的开发者开源了这个接口，所以我也就放出来，如有侵权请及时告知。</p></li>
+<li><p>功能：列表页使用的瀑布流效果（增加了下拉刷新和上拉加载更多）详情页和列表页的切换增加了一个图片放大或缩小到指定位置的效果，图片也可以双指缩放！</p></li>
+</ul>
+
+<h4>
+<a id="视频爽看" class="anchor" href="#%E8%A7%86%E9%A2%91%E7%88%BD%E7%9C%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>视频爽看</h4>
+
+<ul>
+<li><p>介绍：API使用的是优酷开放平台的SDK，不过要吐槽的一点是，优酷的SDK真心不好用，还是Eclipse版本的，我是一点点移植到Android Studio平台的，但是它的接口还是很丰富的，好好的利用一下，还是能够做出一个优秀的APP的。</p></li>
+<li><p>功能：列表页使用了Google的CardView，简单的获取了一些视频的基本数据。播放页使用了优酷提供的视频播放器组件，传入视频ID就可以播放视频了，只要调通了SDK，其他的都是一些简单的数据获取！</p></li>
+</ul>
+
+<h4>
+<a id="音乐轻听" class="anchor" href="#%E9%9F%B3%E4%B9%90%E8%BD%BB%E5%90%AC" aria-hidden="true"><span class="octicon octicon-link"></span></a>音乐轻听</h4>
+
+<ul>
+<li><p>介绍：API获取的是豆瓣音乐的数据，由于也不是开放API，如有侵权请及时告知。</p></li>
+<li><p>功能：播放音乐的界面是我自定义的一个唱机的View，很多思路都是从网上学习借鉴过来的，自己重新造了个轮子。UI和网易云音乐对比的话，只能说是形似神不似了，没有人家做的细致！</p></li>
+</ul>
+
+<h4>
+<a id="二维码扫描" class="anchor" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%89%AB%E6%8F%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>二维码扫描</h4>
+
+<ul>
+<li><p>介绍：这个完全是我自己单独开发的类库，之前也有开源出来，这次又再一次重构优化，后期会单独剥离二维码扫描模块，做成类库和Demo的形式，提供Android Studio版本。</p></li>
+<li><p>功能：扫描界面使用xml进行布局，然后加入属性动画。这样布局更具有优势，更利于多屏幕适配。解码模块使用的是两个主流的开源库Zbar和ZXing，进过多次测试发现，ZBar虽然扫描效率和速度高于ZXing，但是经常扫描出错误的信息，可能由于太灵敏的缘故把，综合二者的优缺点还是建议使用ZXing来解码，并且这个项目还在长期维护更新！</p></li>
+</ul>
+
+<h3>
+<a id="致谢" class="anchor" href="#%E8%87%B4%E8%B0%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>致谢</h3>
+
+<ul>
+<li><p>苦于没有后台支持，找到这些支持JSON数据格式的开放接口可谓是煞费苦心，前前后后尝试了很多次才找到，也感谢网友们提供的接口！</p></li>
+<li><p>界面的原型都是我自己构思的，后期的切图美化主要是Chris帮忙完成的，很感谢他业余时间和我一起完成这样一个APP！</p></li>
+<li><p>项目中大量使用了Github上面优秀的开源项目，我会列举出来！其他一些代码片段就不一一致谢了，很感谢这些开放源码的技术大牛们，让我学到了很多！</p></li>
+<li><p>最后如果觉得我的项目对你有所帮助，请点击我的支付宝付款码请我喝杯咖啡把~当然我也希望你们能够多多<strong>fork</strong>，多多<strong>star</strong>，多多<strong>follow</strong>，这将给我更多的动力开源更多的项目！</p></li>
+</ul>
+
+<h3>
+<a id="开源项目说明" class="anchor" href="#%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源项目说明</h3>
+
+<blockquote>
+<p><strong>ButterKnife</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/JakeWharton/butterknife">https://github.com/JakeWharton/butterknife</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>AndroidTagGroup</strong> </p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/2dxgujun/AndroidTagGroup">https://github.com/2dxgujun/AndroidTagGroup</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>NineOldAndroids</strong> </p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/JakeWharton/NineOldAndroids">https://github.com/JakeWharton/NineOldAndroids</a> </p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>SystemBarTint</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/jgilfelt/SystemBarTint">https://github.com/jgilfelt/SystemBarTint</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>Android-Universal-Image-Loader</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/nostra13/Android-Universal-Image-Loader">https://github.com/nostra13/Android-Universal-Image-Loader</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>PhotoView</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/chrisbanes/PhotoView">https://github.com/chrisbanes/PhotoView</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>OkHttp</strong> </p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>SmartTabLayout</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/ogaclejapan/SmartTabLayout">https://github.com/ogaclejapan/SmartTabLayout</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>SwipeBackLayout</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/ikew0ng/SwipeBackLayout">https://github.com/ikew0ng/SwipeBackLayout</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>ImageBlurring</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/qiujuer/ImageBlurring">https://github.com/qiujuer/ImageBlurring</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>PinterestLikeAdapterView</strong></p>
+</blockquote>
+
+<ul>
+<li><p><strong>Link:</strong> <a href="https://github.com/dodola/PinterestLikeAdapterView">https://github.com/dodola/PinterestLikeAdapterView</a></p></li>
+<li><p><strong>License:</strong> <code>Licensed under the Apache License, Version 2.0 (the "License");</code></p></li>
+</ul>
+
+<blockquote>
+<p><strong>Material-Dialogs</strong></p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Link:</strong> <a href="https://github.com/afollestad/material-dialogs">https://github.com/afollestad/material-dialogs</a>
+</li>
+</ul>
+
+<blockquote>
+<p><strong>EventBus</strong></p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Link:</strong> <a href="https://github.com/greenrobot/EventBus">https://github.com/greenrobot/EventBus</a>
+</li>
+</ul>
+
+<blockquote>
+<p><strong>Gson</strong> </p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Link:</strong> <a href="https://github.com/google/gson">https://github.com/google/gson</a>
+</li>
+</ul>
+
+<blockquote>
+<p><strong>Volley</strong> </p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Link:</strong> <a href="https://android.googlesource.com/platform/frameworks/volley">https://android.googlesource.com/platform/frameworks/volley</a>
+</li>
+</ul>
+
+<blockquote>
+<p><strong>Umeng</strong> </p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Link:</strong> <a href="http://www.umeng.com/">http://www.umeng.com/</a>
+</li>
+</ul>
+
+<blockquote>
+<p><strong>Youku</strong></p>
+</blockquote>
+
+<ul>
+<li>
+<strong>Link:</strong> <a href="http://open.youku.com/">http://open.youku.com/</a>
+</li>
+</ul>
+
+<h3>
+<a id="打赏我" class="anchor" href="#%E6%89%93%E8%B5%8F%E6%88%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>打赏我</h3>
+
+<p><img src="https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/pay_qrcode.png" alt="Image"></p>
+
+<h3>
+<a id="关于我" class="anchor" href="#%E5%85%B3%E4%BA%8E%E6%88%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于我</h3>
+
+<ul>
+<li>
+<strong>QQ:</strong> 1076559197</li>
+<li>
+<strong>Weibo:</strong> <a href="http://weibo.com/obsessive1990">http://weibo.com/obsessive1990</a>
+</li>
+<li>
+<strong>Email:</strong> <a href="mailto:1076559197@qq.com">1076559197@qq.com</a> | <a href="mailto:tchen0707@gmail.com">tchen0707@gmail.com</a>
+</li>
+<li>
+<strong>Github:</strong> <a href="https://github.com/skillcollege">https://github.com/skillcollege</a>
+</li>
+<li>
+<strong>Blog:</strong> <a href="https://skillcollege.github.io">https://skillcollege.github.io</a> | <a href="http://blog.csdn.net/skillcollege">http://blog.csdn.net/skillcollege</a>
+</li>
+</ul>
+
+<h3>
+<a id="项目主页" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目主页</h3>
+
+<p><a href="https://github.com/SkillCollege/SimplifyReader">https://github.com/SkillCollege/SimplifyReader</a></p>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<pre><code>Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+
+Licensed under the Apache License, Version 2.0 (the "License”);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/SkillCollege/SimplifyReader">Simplifyreader</a> is maintained by <a href="https://github.com/SkillCollege">SkillCollege</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
