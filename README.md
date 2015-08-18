@@ -7,6 +7,12 @@
 
 ![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/all_in_one.jpg)
 
+
+![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/project.gif)
+
+
+![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/qrcode.gif)
+
 ###Demo下载
 [火速跳转](https://fir.im/simplifyreader) | [Download-APK](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/apks/app-debug.apk)
 
