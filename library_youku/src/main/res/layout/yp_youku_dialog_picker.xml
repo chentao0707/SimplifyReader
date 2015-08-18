@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="@dimen/dialog_width"
+   android:layout_height="@dimen/dialog_height"
+   android:background="@drawable/prompt_box">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:text="@string/choice_download_mode" 
+            android:paddingTop="5px"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_e"
+            android:textColor="#484747"/>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#c9e9ff"/>
+
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dialog_item_marginH"
+            android:paddingRight="@dimen/dialog_item_marginH"
+            android:paddingTop="@dimen/dialog_firstItemBtn_marginTop"
+            android:paddingBottom="@dimen/dialog_item_marginV"
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/standard_pic" 
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_d"
+                android:textColor="#656b6d"/>
+            
+	         <!--  <ImageSwitcher
+		            android:id="@+id/site_btn_switcher"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true">
+	            
+	             <ImageButton
+		            android:id="@+id/site_btn_not_selected"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@color/transparent"
+		            android:src="@drawable/setting_marquee_round_not_selected"/>
+	             
+	             <ImageButton
+		            android:id="@+id/site_btn_selected"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@color/transparent"
+		            android:src="@drawable/setting_marquee_round_selected"/> 
+	            
+	        </ImageSwitcher>-->
+	        
+	          <RadioButton
+                    android:id="@+id/normal_quality"
+                    android:layout_width="@dimen/dialog_radioBtn_dimen"
+                    android:layout_height="@dimen/dialog_radioBtn_dimen"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/yp_dialog_radiontn_selector"/>
+	        
+            
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dialog_item_marginH"
+            android:paddingRight="@dimen/dialog_item_marginH"
+            android:paddingTop="@dimen/dialog_item_marginV"
+            android:paddingBottom="@dimen/dialog_item_marginV"
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_pic" 
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_d"
+                android:textColor="#656b6d"/>
+            
+	         <!--  <ImageSwitcher
+		            android:id="@+id/site_btn_switcher2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true">
+	            
+	             <ImageButton
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@color/transparent"
+		            android:src="@drawable/setting_marquee_round_not_selected"/>
+	             
+	             <ImageButton
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@color/transparent"
+		            android:src="@drawable/setting_marquee_round_selected"/> 
+		            
+		             </ImageSwitcher>-->
+		             <RadioButton
+	                    android:id="@+id/high_quality"
+	                    android:layout_width="@dimen/dialog_radioBtn_dimen"
+	                    android:layout_height="@dimen/dialog_radioBtn_dimen"
+	                    android:layout_alignParentRight="true"
+	                    android:button="@null"
+                    	android:background="@drawable/yp_dialog_radiontn_selector"
+	                    android:layout_centerVertical="true"/>
+	       
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dialog_item_marginH"
+            android:paddingRight="@dimen/dialog_item_marginH"
+            android:paddingTop="@dimen/dialog_item_marginV"
+            android:paddingBottom="@dimen/dialog_item_marginV"
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/super_pic" 
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_d"
+                android:textColor="#656b6d"/>
+            
+	          <!-- <ImageSwitcher
+		            android:id="@+id/site_btn_switcher3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true">
+	            
+	             <ImageButton
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@color/transparent"
+		            android:src="@drawable/setting_marquee_round_not_selected"/>
+	             
+	             <ImageButton
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@color/transparent"
+		            android:src="@drawable/setting_marquee_round_selected"/> 
+		            
+		              </ImageSwitcher>-->
+		            
+		             <RadioButton
+	                    android:id="@+id/super_quality"
+	                    android:layout_width="@dimen/dialog_radioBtn_dimen"
+	                    android:layout_height="@dimen/dialog_radioBtn_dimen"
+	                    android:layout_alignParentRight="true"
+	                    android:button="@null"
+                    	android:background="@drawable/yp_dialog_radiontn_selector" 
+	                    android:layout_centerVertical="true"/>
+	            
+	      
+            
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dialog_item_marginH"
+            android:layout_marginTop="@dimen/dialog_item_marginV"
+            >
+	          
+             <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="默认音轨" 
+	            android:textSize="@dimen/text_size_d"
+                android:textColor="#656b6d"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+	        
+	        <ImageView
+	            android:id="@+id/dialog_arrrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:src="@drawable/icon_dialog_arrow"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="@dimen/dialog_arrow_marginRight"
+	            android:layout_marginLeft="@dimen/dialog_arrow_marginLeft"
+	            android:layout_centerVertical="true"/>
+
+	        <TextView
+	            android:id="@+id/item4_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@+id/dialog_arrrow"
+	            android:text="进入设置修改"
+	            android:textColor="#999999"
+	            android:textSize="@dimen/text_size_c" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/normal_dialog_btn_marginBottom"
+        android:layout_marginLeft="@dimen/normal_dialog_btn_marginLeft" 
+        android:layout_marginRight="@dimen/normal_dialog_btn_marginLeft">
+
+       <Button
+            android:id="@+id/negtive_btn"
+            android:layout_width="@dimen/normal_dialog_btn_width"
+            android:layout_height="@dimen/normal_dialog_btn_height"
+            android:text="取消" 
+            android:textColor="#bf999999"
+            android:textSize="@dimen/text_size_j"
+            android:shadowColor="#e4ebed"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:background="@drawable/btn_grey"/>
+       
+       <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="@dimen/normal_dialog_btn_width"
+            android:layout_height="@dimen/normal_dialog_btn_height"
+            android:text="确定" 
+            android:background="@drawable/btn_blue"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_j"
+            android:textColor="#ffffff"/>
+            
+            
+            <!--  <ImageButton
+		        android:id="@+id/imageButton1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/btn_blue"
+		        android:background="@color/transparent" />
+          -->
+    </RelativeLayout>
+    
+</RelativeLayout>
+
+
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_wrapper"
+    android:layout_width="@dimen/dialog_width"
+     android:background="#ffffff"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height">
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_title_tv_marginLeft"
+            android:text="@string/choice_download_mode"
+            android:textAppearance="@style/dialogTitleFont" />
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/dialog_cancel_btn_width"
+            android:layout_height="@dimen/dialog_title_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/detail_comment_box_cancle" />
+
+         <ImageView
+            android:id="@+id/left_shadow"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/close_btn"
+            android:background="#f0f0f0" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/left_shadow"
+            android:background="#666666" >
+        </ImageView>
+
+        <View
+            android:id="@+id/bg_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/detail_bg_shadow" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bg_shadow"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/dotted_seperator" />
+            
+        <ImageView
+	        android:id="@+id/bottom_shadow"
+	        android:layout_width="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_height="1px"
+	        android:background="#f0f0f0" />
+            
+        <ImageView
+	        android:layout_width="fill_parent"
+	        android:layout_height="1px"
+	        android:background="#666666" 
+	        android:layout_above="@id/bottom_shadow"/>
+
+	    
+
+        
+                 <View
+                android:layout_width="fill_parent"
+                android:layout_height="4px"
+                android:layout_above="@id/bg_shadow"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:background="#2bb5fd" />
+       
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height">
+
+        <TextView
+            android:id="@+id/item1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_item_marginLeft"
+            android:text="TextView" />
+
+        <ImageSwitcher
+            android:id="@+id/site_btn_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dialog_item_marginRight">
+            
+             <ImageButton
+	            android:id="@+id/site_btn_not_selected"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@color/transparent"
+	            android:src="@drawable/site_btn_round_not_selected"/>
+             
+             <ImageButton
+	            android:id="@+id/site_btn_selected"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@color/transparent"
+	            android:src="@drawable/site_btn_round_selected"/>
+            
+        </ImageSwitcher>
+    </RelativeLayout>
+   
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        >
+
+        <TextView
+            android:id="@+id/item1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_item_marginLeft"
+            android:text="@string/standard_pic"
+            android:textAppearance="@style/dialogItemFont" />
+
+        <ImageSwitcher
+            android:id="@+id/site_btn_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dialog_item_marginRight" >
+
+            <ImageView
+                android:id="@+id/site_btn_not_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/site_btn_round_not_selected" />
+
+            <ImageView
+                android:id="@+id/site_btn_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/site_btn_round_selected" />
+        </ImageSwitcher>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        >
+
+        <TextView
+            android:id="@+id/item2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_item_marginLeft"
+            android:text="@string/high_pic"
+            android:textAppearance="@style/dialogItemFont" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_item_kuhu_marginLeft"
+            android:layout_toRightOf="@id/item2_tv"
+            android:text=""
+            android:textAppearance="@style/dialogItemGrayFont" />
+
+        <ImageSwitcher
+            android:id="@+id/site_btn_switcher2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dialog_item_marginRight" >
+
+            <ImageView
+                android:id="@+id/site_btn_not_selected2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/site_btn_round_not_selected" />
+
+            <ImageView
+                android:id="@+id/site_btn_selected2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/site_btn_round_selected" />
+        </ImageSwitcher>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        >
+
+        <TextView
+            android:id="@+id/item3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_item_marginLeft"
+            android:text="@string/super_pic"
+            android:textAppearance="@style/dialogItemFont" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_item_kuhu_marginLeft"
+            android:layout_toRightOf="@id/item3_tv"
+            android:text=""
+            android:textAppearance="@style/dialogItemGrayFont" />
+
+        <ImageSwitcher
+            android:id="@+id/site_btn_switcher3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dialog_item_marginRight" >
+
+             <ImageView
+                android:id="@+id/site_btn_not_selected3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/site_btn_round_not_selected" />
+
+             <ImageView
+                android:id="@+id/site_btn_selected3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/site_btn_round_selected" />
+        </ImageSwitcher>
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/item4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        >
+
+        <TextView
+            android:id="@+id/item4_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dialog_item_marginLeft"
+            android:text="默认音轨"
+            android:textAppearance="@style/dialogItemFont" />
+
+       
+
+        <ImageView
+            android:src="@drawable/uploading_icon_more"
+            android:id="@+id/go_set_lan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dialog_item_marginRight" />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/go_set_lan"
+            android:layout_marginRight="10px"
+            android:text="进入设置修改"
+            style="@style/homepagegridtext" />
+
+    </RelativeLayout>
+ <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_seperator" />
+            
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#666666" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#f0f0f0" />
+            
+    <LinearLayout
+        android:id="@+id/positiveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:background="#fff5f5f5"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:textAppearance="@style/dialogBtnFont" />
+    </LinearLayout>
+
+</LinearLayout> -->

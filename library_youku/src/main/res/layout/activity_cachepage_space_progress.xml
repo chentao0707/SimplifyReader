@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mem_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/total_mem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="12dp"
+        android:text="总容量"
+        android:textAppearance="@style/Font1_gray_333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/total_mem_text"
+        android:layout_toRightOf="@id/total_mem_text"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/mem_used"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="8px"
+            android:max="1000"
+            android:progressDrawable="@drawable/download_process" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/total_mem_text"
+        android:layout_below="@id/total_mem_text"
+        android:singleLine="true"
+        android:textAppearance="@style/Font1_gray_333333" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_mem_text"
+        android:layout_toRightOf="@id/total_mem"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="@dimen/text_size_1"
+            android:background="#ffcc66" />
+
+        <TextView
+            android:id="@+id/other_used_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="其他程序"
+            android:textAppearance="@style/Font1_gray_333333" />
+
+        <TextView
+            android:id="@+id/other_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="@style/Font1_gray_333333" />
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="@dimen/text_size_1"
+            android:layout_marginLeft="8px"
+            android:background="#2bb5fc" />
+
+        <TextView
+            android:id="@+id/download_used_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="本地缓存"
+            android:textAppearance="@style/Font1_gray_333333" />
+
+        <TextView
+            android:id="@+id/download_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="@style/Font1_gray_333333" />
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="@dimen/text_size_1"
+            android:layout_marginLeft="8px"
+            android:background="#666666" />
+
+        <TextView
+            android:id="@+id/free_mem_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:singleLine="true"
+            android:text="剩余"
+            android:textAppearance="@style/Font1_gray_333333" />
+
+        <TextView
+            android:id="@+id/free_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:textAppearance="@style/Font1_gray_333333" />
+    </LinearLayout>
+
+</RelativeLayout>

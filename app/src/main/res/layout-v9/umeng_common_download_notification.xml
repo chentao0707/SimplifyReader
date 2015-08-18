@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/umeng_common_icon_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:contentDescription="@string/umeng_common_icon"
+            android:src="@android:drawable/stat_sys_download" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="7dp" >
+
+        <LinearLayout
+            android:id="@+id/umeng_common_notification_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/umeng_common_rich_notification_continue"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/umeng_common_gradient_orange"
+                android:singleLine="true"
+                android:text="@string/umeng_common_action_pause"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/umeng_common_rich_notification_cancel"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/umeng_common_gradient_red"
+                android:singleLine="true"
+                android:text="@string/umeng_common_action_cancel"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/umeng_common_notification"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/umeng_common_notification_controller"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/umeng_common_title"
+                style="@android:style/TextAppearance.StatusBar.EventContent.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/umeng_common_progress_text"
+                style="@android:style/TextAppearance.StatusBar.EventContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/umeng_common_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="8dp"
+            android:paddingRight="25dp" />
+    </RelativeLayout>
+
+</LinearLayout>

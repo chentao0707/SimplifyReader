@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_interact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_play_title_height"
+                android:layout_gravity="top"
+                android:layout_margin="0dp"
+                layout="@layout/yp_detail_play_title"
+                android:padding="0dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <include
+                    android:id="@+id/layout_play_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    layout="@layout/yp_detail_bottom_play_control"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/ib_user_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/play_btn_play_big_detail"
+                android:visibility="gone" >
+            </ImageView>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/load_seekbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/yp_detail_play_loading"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/view_restart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/yp_detail_retry"
+            android:visibility="gone" />
+
+        <com.youku.player.ui.widget.PlayerLoading
+            android:id="@+id/newLoading_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

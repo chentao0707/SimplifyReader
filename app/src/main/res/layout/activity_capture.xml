@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout
+    android:id="@+id/capture_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/capture_error_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+
+    <FrameLayout
+        android:id="@+id/capture_crop_view"
+        android:layout_width="@dimen/qrcode_crop_width"
+        android:layout_height="@dimen/qrcode_crop_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/scan_container">
+
+        <ImageView
+            android:id="@+id/capture_scan_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/scan_mask"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/capture_mask_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/capture_crop_view"
+        android:background="@color/alpha_80_black"/>
+
+    <ImageView
+        android:id="@+id/capture_mask_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/capture_crop_view"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/capture_mask_left"
+        android:background="@color/alpha_80_black"/>
+
+    <ImageView
+        android:id="@+id/capture_mask_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/capture_mask_top"
+        android:layout_toRightOf="@id/capture_crop_view"
+        android:background="@color/alpha_80_black"/>
+
+    <ImageView
+        android:id="@+id/capture_mask_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/capture_crop_view"
+        android:layout_toLeftOf="@id/capture_mask_right"
+        android:layout_toRightOf="@id/capture_mask_left"
+        android:background="@color/alpha_80_black"/>
+
+    <TextView
+        android:id="@+id/capture_scan_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capture_crop_view"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="请将图片对准扫描框"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/capture_picture_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/folder"
+            android:gravity="center"
+            android:text="@string/btn_picture"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/capture_light_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/light_selector"
+            android:gravity="center"
+            android:text="@string/btn_light"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/capture_mode_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/capture_mode_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/qrcode_selector"
+            android:gravity="center"
+            android:text="@string/qrcode"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/capture_mode_barcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/barcode_selector"
+            android:gravity="center"
+            android:text="@string/barcode"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </RadioGroup>
+
+</RelativeLayout>

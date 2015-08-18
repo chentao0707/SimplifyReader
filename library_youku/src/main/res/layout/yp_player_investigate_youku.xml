@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yp_investigate_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clickable="false" >
+
+    <LinearLayout
+        android:id="@+id/yp_investigate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/yp_investigate_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/yp_investigate_margin_bottom"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/yp_investigate_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/investigate_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="@dimen/yp_investigate_close_width"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/yp_investigate_close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/yp_investigate_text"
+                android:layout_width="@dimen/yp_investigate_text_container_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/yp_investigate_text_margin_left"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/yp_investigate_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yp_investigate_arrowright"
+            android:layout_width="@dimen/yp_investigate_arrowright_width"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/yp_investigate_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

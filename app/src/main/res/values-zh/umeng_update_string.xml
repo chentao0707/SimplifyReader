@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+	<string name="UMBreak_Network">未联网</string>
+	<string name="UMUpdateTitle">发现新版本</string>
+	<string name="UMNewVersion">最新版本: </string>
+	<string name="UMUpdateContent">更新内容</string>
+	<string name="UMUpdateSize">仅需要下载:</string>
+	<string name="UMTargetSize">新版本大小:</string>
+	<string name="UMGprsCondition">（提示：非WIFI环境）</string>
+	<string name="UMUpdateNow">立即更新</string>
+	<string name="UMAppUpdate">应用更新</string>
+	<string name="UMNotNow">以后再说</string>
+	<string name="UMIgnore">忽略该版</string>
+	<string name="UMToast_IsUpdating">正在更新中....</string>
+	<string name="UMDialog_InstallAPK">最新版本已下载，是否安装？</string>
+</resources>

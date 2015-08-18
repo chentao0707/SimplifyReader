@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <!-- play area -->
+
+    <dimen name="detail_play_title_height">30dp</dimen>
+    <dimen name="detail_play_title_margin_left_right">4.2dp</dimen>
+
+    <!-- 详情页播放器底部控制区 -->
+    <dimen name="detail_play_content_padding_top">6dp</dimen>
+    <dimen name="detail_play_content_padding_bottom">6dp</dimen>
+    <dimen name="detail_play_full_margin_right">10dp</dimen>
+    <dimen name="detail_play_progress_margin_left">8dp</dimen>
+    <dimen name="detail_play_progress_margin_right">8dp</dimen>
+    <!-- pop up middle -->
+
+
+    <!-- 全屏播放 剧集选择 -->
+    <dimen name="fullscreen_player_episode_item_text_size">10sp</dimen>
+    <dimen name="fullscreen_player_episode_item_small_text_size">8sp</dimen>
+    <dimen name="dialog_title_height">32dp</dimen>
+    <dimen name="dialog_height">246dp</dimen>
+    <dimen name="dialog_width">229dp</dimen>
+    <dimen name="dialog_firstItemBtn_marginTop">8dp</dimen>
+    <dimen name="dialog_item_marginH">14dp</dimen>
+    <dimen name="dialog_item_marginV">5dp</dimen>
+    <dimen name="dialog_arrow_marginRight">20dp</dimen>
+    <dimen name="dialog_arrow_marginLeft">4dp</dimen>
+    <dimen name="dialog_radioBtn_dimen">28dp</dimen>
+
+    <!-- normal dialog -->
+    <dimen name="normal_dialog_width">229dp</dimen>
+    <dimen name="normal_dialog_message_marginTop">40dp</dimen>
+    <dimen name="normal_dialog_btn_width">96dp</dimen>
+    <dimen name="normal_dialog_btn_height">40dp</dimen>
+    <dimen name="normal_dialog_btn_marginLeft">12dp</dimen>
+    <dimen name="normal_dialog_btn_marginBottom">14dp</dimen>
+    <dimen name="normal_dialog_btn_marginTop">30dp</dimen>
+
+    <!-- pause ad Size -->
+    <dimen name="fullscreen_pause_ad_container_width">600dp</dimen>
+    <dimen name="fullscreen_pause_ad_container_height">500dp</dimen>
+    <dimen name="fullscreen_youku_pause_ad_width">390dp</dimen>
+    <dimen name="fullscreen_youku_pause_ad_height">280dp</dimen>
+    <dimen name="fullscreen_punchbox_pause_ad_width">405dp</dimen>
+    <dimen name="fullscreen_punchbox_pause_ad_height">270dp</dimen>
+    <dimen name="fullscreen_player_setting_width">373dp</dimen>
+    <dimen name="fullscreen_player_setting_height">250dp</dimen>
+    <dimen name="plugin_detail_play_pause_pandding">0dp</dimen>
+
+    <!-- Text Size -->
+
+    <dimen name="text_size_a">8sp</dimen>
+    <dimen name="text_size_b">10sp</dimen>
+    <dimen name="text_size_c">12sp</dimen>
+    <dimen name="text_size_d">14sp</dimen>
+    <dimen name="text_size_e">18sp</dimen>
+    <dimen name="text_size_f">22sp</dimen>
+    <dimen name="text_size_g">29sp</dimen>
+    <dimen name="text_size_h">32sp</dimen>
+    <dimen name="text_size_i">36sp</dimen>
+    <dimen name="text_size_l">20sp</dimen>
+    <dimen name="text_size_j">16sp</dimen>
+    <dimen name="text_size_1">9sp</dimen>
+    <dimen name="text_size_2">11sp</dimen>
+    <dimen name="text_size_3">12sp</dimen>
+    <dimen name="text_size_4">13sp</dimen>
+    <dimen name="text_size_5">14sp</dimen>
+    <dimen name="text_size_6">15sp</dimen>
+    <dimen name="text_size_7">18sp</dimen>
+    <dimen name="text_size_8">25sp</dimen>
+
+    <!-- 播放广告 -->
+    <dimen name="player_ad_head_padding">8dp</dimen>
+    <dimen name="player_ad_count_text_padding">6dp</dimen>
+    <dimen name="player_ad_more_height">30dp</dimen>
+    <dimen name="player_ad_more_padding">12dp</dimen>
+    <dimen name="player_ad_go_full_margin_bottom">12dp</dimen>
+    <dimen name="player_ad_go_full_margin_right">8dp</dimen>
+    <dimen name="player_ad_go_full_padding">5dp</dimen>
+    <dimen name="player_ad_more_height_youku">30dp</dimen>
+    <dimen name="player_ad_skip_width_youku">69.5dp</dimen>
+    <dimen name="player_ad_count_wrap_widht_youku">46dp</dimen>
+    <dimen name="player_ad_count_width_youku">23dp</dimen>
+    <dimen name="player_ad_count_text_padding_youku">4dp</dimen>
+    <dimen name="player_ad_count_text_size">18sp</dimen>
+
+    <!-- 播放广告 youku -->
+    <dimen name="player_ad_count_text_size_youku">14dp</dimen>
+    <dimen name="player_ad_text_height_youku">32dp</dimen>
+    <!-- <dimen name="player_ad_skip_width_youku">72dp</dimen> -->
+    <dimen name="player_ad_more_width_youku">80dp</dimen>
+    <dimen name="player_ad_go_full_width_youku">35dp</dimen>
+    <dimen name="player_ad_more_padding_youku">2dp</dimen>
+    <!-- youku dialog -->
+    <dimen name="yp_youku_dialog_width">251dp</dimen>
+    <dimen name="yp_youku_dialog_height">148dp</dimen>
+    <dimen name="yp_youku_dialog_bottom_height">43dp</dimen>
+    <dimen name="yp_youku_dialog_txt_cancel_textsize">15dp</dimen>
+    <dimen name="yp_edittext_add_txt_linespacingextra">3dp</dimen>
+    <dimen name="yp_normal_content_textsize">17dp</dimen>
+    <dimen name="yp_image_ad_close_margin_right">1dp</dimen>
+    <dimen name="paytip_full_width">191dp</dimen>
+    <dimen name="paytip_full_height">54dp</dimen>
+    <dimen name="paytip_close_width">37dp</dimen>
+    <dimen name="paytip_close_height">32dp</dimen>
+    <dimen name="paytip_close_margin">8dp</dimen>
+    <dimen name="paytip_full_tip_width">130dp</dimen>
+    <dimen name="paytip_full_arrow_width">26dp</dimen>
+    <dimen name="paytip_full_textsize">11dp</dimen>
+    <dimen name="paytip_small_textsize">12dp</dimen>
+    <dimen name="paytip_full_margin_bottom">86dp</dimen>
+    <dimen name="paytip_small_tip_width">48dp</dimen>
+    <dimen name="paytip_small_margin_bottom">48dp</dimen>
+
+    <!-- youku investigate ad -->
+    <dimen name="yp_investigate_height">33dp</dimen>
+    <dimen name="yp_investigate_close_width">37dp</dimen>
+    <dimen name="yp_investigate_text_container_width">56dp</dimen>
+    <dimen name="yp_investigate_text_margin_left">7dp</dimen>
+    <dimen name="yp_investigate_text_size">14dp</dimen>
+    <dimen name="yp_investigate_arrowright_width">26dp</dimen>
+    <dimen name="yp_investigate_margin_bottom">60dp</dimen>
+    
+    <!-- tudou encrypt dialog -->
+    <dimen name="tudou_dialog_height">175dp</dimen>
+    <dimen name="tudou_dialog_width">300dp</dimen>
+    
+    <dimen name="channel_main_tabindicator_height">40dp</dimen>
+    <dimen name="channeltab_txt_textsize">14dp</dimen>
+    <dimen name="channeltab_dividerpadding">10dp</dimen>   
+    
+    <dimen name="gridview_spacing">8dp</dimen>
+    <dimen name="gridview_pading_horizontal">5dp</dimen>
+    <dimen name="gridview_pading_top">8dp</dimen>   
+    
+    <dimen name="toolbar_btn_txt_textsize">12dp</dimen>    
+    
+    <dimen name="download_grid_item_add_height">47dp</dimen>
+    <dimen name="download_grid_item_image_padding_right">3dp</dimen>
+    <dimen name="gridview_item_tv_height">41dp</dimen>
+    <dimen name="myyouku_item_line_margin_left">6dp</dimen>
+    <dimen name="shadow_height">1dp</dimen>   
+    <dimen name="homepage_item_title_first">14dp</dimen>
+    <dimen name="homepage_item_title_second">12dp</dimen>      
+    <dimen name="history_text_point_margin_bottom">13dp</dimen>   
+    <dimen name="history_item_txt_first_textsize">14dp</dimen>
+    <dimen name="history_item_txt_second_textsize">10dp</dimen>  
+    
+    <dimen name="subtitle_height">40dp</dimen>
+    <dimen name="subtitle_margin">8dp</dimen>    
+</resources>

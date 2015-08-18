@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/layout_normal_dialog"
+        android:layout_width="@dimen/yp_youku_dialog_width"
+        android:layout_height="@dimen/yp_youku_dialog_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/yp_normal_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_normal_dialog_bottom" />
+
+        <RelativeLayout
+            android:id="@+id/layout_normal_dialog_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yp_youku_dialog_bottom_height"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/positive_btn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/yp_youku_dialog_cancel"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/positive_btn"
+                        style="@style/yp_youku_dialog_txt_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="取消" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#2c5e5e5e" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff" />
+
+                <LinearLayout
+                    android:id="@+id/negtive_btn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/yp_youku_dialog_ok"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/negtive_btn"
+                        style="@style/yp_youku_dialog_txt_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="确定" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/soku_layout_bottom_cover" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

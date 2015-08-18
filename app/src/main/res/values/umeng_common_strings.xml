@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+	<string name="umeng_common_download_notification_prefix">Downloading: </string>
+	<string name="umeng_common_pause_notification_prefix">Pause: </string>
+	<string name="umeng_common_start_download_notification">Download start.</string>
+	<string name="umeng_common_start_patch_notification">Patch start.</string>
+	<string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+	<string name="umeng_common_download_failed">Download Failed! </string>
+	<string name="umeng_common_download_finish">Download finished,click to install it.</string>
+	<string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+	<string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+	<string name="umeng_common_icon">icon</string>
+</resources>

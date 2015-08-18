@@ -1,0 +1,109 @@
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string name="app_name">PlayerUI</string>
+    
+    	<string name="tips_not_responding">网络不给力，请稍后再试。</string>
+    
+      <string name="player_error_native">本地文件已损坏</string> <!-- 返回 -->
+    <string name="Player_error_timeout">网络不太给力哦,如需观看,请重试。</string> <!-- 重新加载 / 返回 -->
+    <string name="player_error_f101">抱歉，该视频只在中国大陆播放，请您观看其他视频。</string>
+    <string name="player_error_f102">该视频被设为私密，请登录或至优酷网站联系上传者。</string>
+    <string name="player_error_f105">该视频已加密，请输入密码。</string>
+    <string name="player_error_f105_see_others">该视频已加密，暂无法播放，请您观看其他视频。</string>
+    <string name="player_error_f106">抱歉，该视频内容不存在或无效，请您观看其他视频。</string>
+    <string name="player_error_f107">对不起，您输入的密码错误，请重新输入。</string>
+    <string name="player_error_url_is_nul">抱歉，该视频格式暂不能在您手机上播放，您可以点击进入优酷网尝试观看</string>
+    <string name="player_error_url_is_nul_tudou">抱歉，该视频格式暂不能在您手机上播放，请访问土豆网观看</string>
+    <string name="Player_error_f100">连接服务器异常，请您观看其他视频。</string> <!-- （其它错误） 返回 -->
+    <string name="player_error_no_pay">暂不支持付费视频播放，请到主站观看</string>
+    <string name="player_error_no_network">您的网络已断开，请联网后继续观看。</string> <!-- 去联网 / 返回 -->
+    <string name="super_pic">超清</string>
+    <string name="high_pic">高清  </string>
+    <string name="standard_pic">标清</string>
+    <string name="no_copyright">无版权播放</string>
+    <string name="detail_music">音乐</string>
+    <string name="detail_ugc">ugc</string>
+    <string name="detail_tv">电视剧</string>
+    <string name="detail_movie">电影</string>
+    <string name="detail_variety">综艺</string>
+    <string name="detail_cartoon">动漫</string>
+    <string name="detail_memory">纪录片</string>
+    <string name="detail_education">教育</string>
+    <string name="detail_special">专辑</string> <!-- 详情页结束 --> <!-- 播放历史页 -->
+    <string name="replay">重播</string>
+    <string name="play_next">下集</string>
+    <string name="choice_download_mode">缓存默认设置</string>
+    <string name="player_tip_loading">即将为您播放</string>
+    <string name="playersdk_ad_skip">跳过广告</string>
+    <string name="playersdk_ad_descrip_youku">了解详情</string>
+    <string name="playersdk_ad_descrip_play_youku">进入观看</string>
+    <string name="playersdk_ad_descrip_second">秒</string>
+    <string name="playersdk_ad_hint_tologin_des">登录升级视频观看体验！</string>
+    <string name="playersdk_ad_hint_tologin_ok">马上登录</string>
+    <string name="playersdk_ad_hint_tologin_cancel">稍后再说</string>
+
+    <string name="player_error_dialog_password_required">请输入视频密码</string>
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="player_tips_use_3g">当前使用2G/3G/4G网络</string>
+    <string name="player_tips_not_responding">网络不给力，请稍后再试。</string>
+    <string name="player_webview_tip">部分设备无法播放，可尝试跳转至其他浏览器播放</string>
+    <string name="player_tips_no_network">当前无网络连接</string>
+    <string name="player_webview_wrong_address">地址错误</string>
+    <string name="player_webview_refresh">刷新</string>
+    <string name="player_webview_mail_app_not_found">您的手机木有安装邮箱</string>
+    
+    <string name="tudou_dialog_title">"该视频已加密"</string>
+    <string name="tudou_dialog_sub_title">"请输入密码观看"</string>
+    
+    <string name="complete">完成</string>    
+    <string name="edite">编辑</string>   
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string> 
+    <string name="delete_my_tag_title">删除分类</string>
+    <string name="delete_my_tag_message">确认删除吗？</string>   
+	<string name="tips_no_network">当前无网络连接</string> 
+	
+    <!-- 缓存页 v3.0—————————————————————————————————————————————————————————————— -->
+    
+    <string name="download_add_more">添加缓存更多剧集</string>
+    <string name="download_exist_not_finished">该视频已在您的缓存列表中</string>
+    <string name="download_exist_finished">该视频已缓存完成</string>
+    <string name="download_add_success">添加缓存成功</string>
+    <string name="download_add_failed">添加失败，请稍后再试</string>
+    <string name="download_no_sdcard">木有发现存储设备，请插入SD卡试试</string>
+    <string name="download_no_space">空间不足，请删除些内容再缓存</string>
+    <string name="download_timeout">网络不给力，正在缓存的视频已暂停。</string>
+	<string name="download_no_network">网络已断开，正在缓存的视频将在网络连接恢复后续传。</string>
+    <string name="download_unknown_error">该视频暂不支持缓存</string>
+    <string name="download_write_fail">储存本地视频信息失败</string>
+    <string name="download_many_fail">S个正缓存，F个暂无缓存版权</string>
+    <string name="download_many_fail_timeout">S个正缓存，F个因断网添加失败</string>
+    <string name="download_many_fail_no_space">S个正缓存，空间不足F个未缓存，请删些内容</string>
+    <string name="download_many_fail_unknown_error">S个正缓存，F个不明原因失败</string>
+    <string name="download_cannot_ues_3g">已设置为2G/3G/4G下不允许缓存视频</string>
+    
+    
+    <string name="tips_no_cache">还未缓存任何视频</string>     
+    <string name="detail_entertainment">娱乐</string> 
+    <string name="wait">等待</string>
+    <string name="pause">暂停</string>
+    <string name="download">下载</string>       	
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ad_page_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 头部 -->
+
+        <RelativeLayout
+            android:id="@+id/play_controller_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_ad_text_height_youku"
+            android:layout_alignParentTop="true"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/my_ad_skip"
+                android:layout_width="@dimen/player_ad_skip_width_youku"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/yp_ad_background_color_youku"
+                android:gravity="center"
+                android:padding="@dimen/player_ad_count_text_padding_youku"
+                android:text="@string/playersdk_ad_skip"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/player_ad_count_text_size_youku"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/my_ad_blank"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toLeftOf="@+id/my_ad_skip"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_ad_count_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toLeftOf="@+id/my_ad_blank"
+                android:background="@color/yp_ad_background_color_youku"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/player_ad_count_text_padding_youku"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/my_ad_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textColor="#ff8888"
+                    android:textSize="@dimen/player_ad_count_text_size_youku"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/playersdk_ad_descrip_second"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/player_ad_count_text_size_youku"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/ib_detail_play_control_ad_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/play_btn_play_big_detail"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_ad_text_height_youku"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom|right"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/interactive_ad_gofull_layout"
+                android:layout_width="@dimen/player_ad_go_full_width_youku"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/ad_more"
+                android:layout_marginRight="1dp"
+                android:background="@color/yp_ad_background_color_youku"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/interactive_ad_gofull_src"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/plugin_interactive_ad_gofull_youku" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ad_more"
+                android:layout_width="@dimen/player_ad_more_width_youku"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@+id/gofulllayout"
+                android:layout_alignWithParentIfMissing="true"
+                android:drawablePadding="1dp"
+                android:drawableRight="@drawable/plugin_ad_more_youku"
+                android:gravity="center"
+                android:paddingLeft="@dimen/player_ad_more_padding_youku"
+                android:paddingRight="@dimen/player_ad_more_padding_youku"
+                android:text="@string/playersdk_ad_descrip_youku"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/player_ad_count_text_size_youku"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/gofulllayout"
+                android:layout_width="@dimen/player_ad_go_full_width_youku"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/yp_ad_background_color_youku"
+                android:clickable="true"
+                android:padding="@dimen/player_ad_go_full_padding" >
+
+                <ImageView
+                    android:id="@+id/gofullscreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/plugin_ad_gofull_youku" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/interactive_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true" >
+    </RelativeLayout>
+
+</FrameLayout>

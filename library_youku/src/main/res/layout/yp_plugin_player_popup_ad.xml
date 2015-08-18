@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/play_middle_setting"
+        android:layout_width="@dimen/fullscreen_pause_ad_container_width"
+        android:layout_height="@dimen/fullscreen_pause_ad_container_height"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="@dimen/fullscreen_youku_pause_ad_width"
+            android:layout_height="@dimen/fullscreen_youku_pause_ad_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/plugin_pause_ad_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/btn_close_pausead"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/yp_plugin_fullscreen_ad_close_background"
+                    android:scaleType="center"
+                    android:src="@drawable/plugin_pause_ad_close" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/custom_fulladd"
+            android:layout_width="@dimen/fullscreen_punchbox_pause_ad_width"
+            android:layout_height="@dimen/fullscreen_punchbox_pause_ad_height"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ad_mobisage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ad_domobContainer"
+            android:layout_width="360dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>
