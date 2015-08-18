@@ -168,7 +168,7 @@
 
 ###项目主页
 
-[https://github.com/SkillCollege/SimplifyReader](https://github.com/SkillCollege/SimplifyReader)
+[http://skillcollege.github.io/SimplifyReader/](http://skillcollege.github.io/SimplifyReader/)
 
 ###License
 
