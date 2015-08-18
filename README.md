@@ -5,19 +5,19 @@
 
 ###效果图
 
-![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/all_in_one.jpg)
+![image](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/all_in_one.jpg)
 
 
-![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/project.gif)
+![image](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/project.gif)
 
-![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/qrcode.gif)
+![image](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/qrcode.gif)
 
-![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/project_struct.png)
+![image](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/project_struct.png)
 
 ###Demo下载
-[火速跳转](https://fir.im/simplifyreader) | [Download-APK](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/apks/app-debug.apk)
+[火速跳转](https://fir.im/simplifyreader) | [Download-APK](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/apks/app-debug.apk)
 
-![image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/download.png)
+![image](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/download.png)
 
 ###模块分析
 
@@ -156,7 +156,7 @@
 
 ###打赏我
 
-![Image](https://raw.githubusercontent.com/SkillCollege/SimplifyReader/master/images/pay_qrcode.png)
+![Image](https://raw.githubusercontent.com/SkillCollege/server/master/SimplifyReader/images/pay_qrcode.png)
 
 ###关于我
 
