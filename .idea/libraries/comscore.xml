@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="comscore">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/library_youku/libs/comscore.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

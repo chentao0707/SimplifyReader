@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="mobisageSDK">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/library_youku/libs/mobisageSDK.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
