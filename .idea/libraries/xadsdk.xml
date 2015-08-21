@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xadsdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/xadsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

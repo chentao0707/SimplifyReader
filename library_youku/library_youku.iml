@@ -95,8 +95,8 @@
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="YoukuAnalytics" level="project" />
     <orderEntry type="library" exported="" name="fastjson-1.1.24" level="project" />
-    <orderEntry type="library" exported="" name="eventbus-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.0" level="project" />
+    <orderEntry type="library" exported="" name="eventbus-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="CocoUnion_AD_SDK_Android_v4.1.2" level="project" />
     <orderEntry type="library" exported="" name="InMobi-4.0.4" level="project" />
     <orderEntry type="library" exported="" name="mAppTracker" level="project" />

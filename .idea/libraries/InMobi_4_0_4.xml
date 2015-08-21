@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="InMobi-4.0.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/InMobi-4.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

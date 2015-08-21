@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mAppTracker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/mAppTracker.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

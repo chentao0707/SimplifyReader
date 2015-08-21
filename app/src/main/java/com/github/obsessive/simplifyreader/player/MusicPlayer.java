@@ -125,6 +125,7 @@ public class MusicPlayer implements OnCompletionListener, OnErrorListener, OnBuf
 
         mMediaPlayer.start();
         mPlayState = MusicPlayState.MPS_PLAYING;
+        sendPlayCurrentPosition();
     }
 
     public void pause() {

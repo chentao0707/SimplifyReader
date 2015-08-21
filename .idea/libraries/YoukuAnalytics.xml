@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="YoukuAnalytics">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library_youku/libs/YoukuAnalytics.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
