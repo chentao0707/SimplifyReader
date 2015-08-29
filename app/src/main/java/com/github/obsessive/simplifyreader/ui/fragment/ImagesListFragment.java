@@ -16,6 +16,7 @@
 
 package com.github.obsessive.simplifyreader.ui.fragment;
 
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
@@ -276,8 +277,14 @@ public class ImagesListFragment extends BaseFragment implements ImagesListView, 
 
     @Override
     public void onItemClick(PLAAdapterView<?> parent, View view, int position, long id) {
+        Rect frame = new Rect();
+        getActivity().getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+        int statusBarHeight = frame.top;
+
         int[] location = new int[2];
         view.getLocationOnScreen(location);
+        location[1] += statusBarHeight;
+
         int width = view.getWidth();
         int height = view.getHeight();
 
