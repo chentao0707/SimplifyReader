@@ -168,6 +168,10 @@ public class SmoothImageView extends PhotoView {
         if (getDrawable() == null) {
             return;
         }
+        
+        //防止转换失败
+        if (getDrawable() instanceof ColorDrawable) return;
+
         if (mBitmap == null || mBitmap.isRecycled()) {
             mBitmap = ((BitmapDrawable) getDrawable()).getBitmap();
         }
