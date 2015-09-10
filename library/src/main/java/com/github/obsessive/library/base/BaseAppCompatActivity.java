@@ -362,8 +362,9 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
      * @param msg
      */
     protected void showToast(String msg) {
+        //防止遮盖虚拟按键
         if (null != msg && !CommonUtils.isEmpty(msg)) {
-            Snackbar.make(getWindow().getDecorView(), msg, Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(getLoadingTargetView(), msg, Snackbar.LENGTH_SHORT).show();
         }
     }
 
