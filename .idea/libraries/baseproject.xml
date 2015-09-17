@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="baseproject">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/library_youku/libs/baseproject.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
