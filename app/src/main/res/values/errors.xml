@@ -16,6 +16,6 @@
   -->
 
 <resources>
-    <string name="error_news_detail_url_null">获取新闻URL失败</string>
-    <string name="error_image_load_fail">图片下载失败</string>
+    <string name="error_news_detail_url_null">Failed to fetch news url</string>
+    <string name="error_image_load_fail">Failed to download the picture</string>
 </resources>
