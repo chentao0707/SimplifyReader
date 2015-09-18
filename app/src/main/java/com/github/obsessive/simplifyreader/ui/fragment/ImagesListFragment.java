@@ -80,7 +80,7 @@ public class ImagesListFragment extends BaseFragment implements ImagesListView, 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mCurrentImagesCategory = getResources().getStringArray(R.array.images_category_list)[0];
+        mCurrentImagesCategory = getResources().getStringArray(R.array.images_category_list_id)[0];
     }
 
     @Override

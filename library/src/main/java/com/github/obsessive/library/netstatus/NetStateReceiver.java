@@ -43,8 +43,12 @@ public class NetStateReceiver extends BroadcastReceiver {
     private static BroadcastReceiver mBroadcastReceiver;
 
     private static BroadcastReceiver getReceiver() {
-        if (mBroadcastReceiver == null) {
-            mBroadcastReceiver = new NetStateReceiver();
+        if (null == mBroadcastReceiver) {
+            synchronized (NetStateReceiver.class) {
+                if (null == mBroadcastReceiver) {
+                    mBroadcastReceiver = new NetStateReceiver();
+                }
+            }
         }
         return mBroadcastReceiver;
     }

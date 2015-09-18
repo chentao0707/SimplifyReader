@@ -18,6 +18,5 @@
 <resources>
 
     <color name="tb_munion_item_force">#e3e3e3</color>
-    <string name="tb_munion_tip_download_prefix">正在下载:</string>
 
 </resources>

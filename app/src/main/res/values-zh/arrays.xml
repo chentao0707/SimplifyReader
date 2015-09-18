@@ -17,20 +17,20 @@
 <resources>
 
     <array name="navigation_list">
-        <item>Photo</item>
-        <item>Video</item>
-        <item>Music</item>
+        <item>图片浏览</item>
+        <item>视频爽看</item>
+        <item>音乐轻听</item>
     </array>
 
     <array name="news_category_list">
-        <item>Top News</item>
-        <item>Cars</item>
-        <item>House</item>
-        <item>Technology</item>
-        <item>Signs</item>
-        <item>Travel</item>
-        <item>Fashion</item>
-        <item>Entertainment</item>
+        <item>头条</item>
+        <item>汽车</item>
+        <item>房产</item>
+        <item>科技</item>
+        <item>星座</item>
+        <item>旅游</item>
+        <item>时尚</item>
+        <item>娱乐</item>
     </array>
 
     <array name="images_category_list_id">
@@ -43,26 +43,26 @@
     </array>
 
     <array name="images_category_list_name">
-    <item>Beauty</item>
-    <item>Cartoon</item>
-    <item>Star</item>
-    <item>Car</item>
-    <item>Photography</item>
-    <item>Food</item>
+        <item>美女</item>
+        <item>动漫</item>
+        <item>明星</item>
+        <item>汽车</item>
+        <item>摄影</item>
+        <item>美食</item>
     </array>
 
     <array name="videos_category_list">
-        <item>Pop</item>
-        <item>Fun</item>
-        <item>Cartoon</item>
-        <item>Variety</item>
+        <item>热门</item>
+        <item>搞笑</item>
+        <item>动漫</item>
+        <item>综艺</item>
     </array>
 
     <array name="about_list">
-        <item>Current Version</item>
-        <item>About Author</item>
-        <item>Project Site</item>
-        <item>Project Introduction</item>
-        <item>Open Source License</item>
+        <item>当前版本</item>
+        <item>关于作者</item>
+        <item>项目主页</item>
+        <item>项目介绍</item>
+        <item>开源项目说明</item>
     </array>
 </resources>

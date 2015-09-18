@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简阅</string>
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">DrawerClose</string>
+    <string name="menu_capture">扫一扫</string>
+    <string name="menu_about_us">关于我们</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="splash_copyright">Copyright &#169; 2015 SimplifyReader All Rights Reserved\nPowered by Obsessive and Chris</string>
+    <string name="splash_slogan">看尽生活中的点滴</string>
+    <string name="splash_version">V %1$s</string>
+    <string name="double_click_exit">再按一次退出</string>
+    <string name="common_load_more_end">没有更多了</string>
+    <string name="feedback_welcome_info">感谢您提出反馈意见,我会尽快回复</string>
+
+    <!-- Video Play-->
+    <string name="player_title">视频播放</string>
+    <string name="player_view_count">观看次数\t</string>
+    <string name="player_favor_count">收藏次数\t</string>
+    <string name="player_comment_count">评论次数\t</string>
+    <string name="player_publish">发布于\t</string>
+    <string name="player_tags">标签</string>
+
+    <string name="btn_history">历史</string>
+    <string name="btn_picture">图片</string>
+    <string name="btn_light">灯光</string>
+    <string name="btn_ok">确定</string>
+    <string name="qrcode">二维码</string>
+    <string name="barcode">条形码</string>
+    <string name="tips_open_camera_error">打开相机失败,请确保允许应用使用相机权限后重试!</string>
+    <string name="tips_decode_null">未解析到任何数据</string>
+
+    <string name="title_image_picker">本地相册</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="error_image_load_fail">图片下载失败</string>
+    <string name="error_news_detail_url_null">获取新闻URL失败</string>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="umeng_common_icon">图标</string>
+</resources>
