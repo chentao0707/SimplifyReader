@@ -63,9 +63,13 @@ public class BaseAppManager {
 
     }
 
-    public synchronized static BaseAppManager getInstance() {
-        if (instance == null) {
-            instance = new BaseAppManager();
+    public static BaseAppManager getInstance() {
+        if (null == instance) {
+            synchronized (BaseAppManager.class) {
+                if (null == instance) {
+                    instance = new BaseAppManager();
+                }
+            }
         }
         return instance;
     }
