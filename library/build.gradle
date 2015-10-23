@@ -51,7 +51,7 @@ dependencies {
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.github.chrisbanes.photoview:library:1.2.2'
-    compile 'com.afollestad:material-dialogs:0.7.6.0'
+    compile 'com.afollestad:material-dialogs:0.7.9.1'
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'com.squareup.okhttp:okhttp:2.4.0'
 }
