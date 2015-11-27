@@ -17,6 +17,7 @@
 package com.github.obsessive.simplifyreader.presenter.impl;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.animation.Animation;
 
 import com.github.obsessive.simplifyreader.interactor.SplashInteractor;
@@ -31,7 +32,7 @@ import com.github.obsessive.simplifyreader.view.SplashView;
  * Description:
  */
 public class SplashPresenterImpl implements Presenter {
-
+    private String TAG="SplashPresenterImpl";
     private Context mContext = null;
     private SplashView mSplashView = null;
     private SplashInteractor mSplashInteractor = null;
@@ -48,7 +49,6 @@ public class SplashPresenterImpl implements Presenter {
 
     @Override
     public void initialized() {
-        mSplashView.initializeUmengConfig();
         mSplashView.initializeViews(mSplashInteractor.getVersionName(mContext),
                 mSplashInteractor.getCopyright(mContext),
                 mSplashInteractor.getBackgroundImageResID());
@@ -63,6 +63,7 @@ public class SplashPresenterImpl implements Presenter {
             @Override
             public void onAnimationEnd(Animation animation) {
                 mSplashView.navigateToHomePage();
+                Log.d(TAG, "onAnimationEnd: ");
             }
 
             @Override

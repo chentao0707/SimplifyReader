@@ -23,7 +23,6 @@ import com.github.obsessive.library.base.BaseSwipeBackCompatActivity;
 import com.github.obsessive.simplifyreader.R;
 import com.github.obsessive.simplifyreader.SimplifyReaderApplication;
 import com.github.obsessive.simplifyreader.view.base.BaseView;
-import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
 
@@ -59,13 +58,11 @@ public abstract class BaseSwipeBackActivity extends BaseSwipeBackCompatActivity 
     @Override
     protected void onResume() {
         super.onResume();
-        MobclickAgent.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        MobclickAgent.onPause(this);
     }
 
     protected SimplifyReaderApplication getBaseApplication() {

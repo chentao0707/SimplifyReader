@@ -17,9 +17,15 @@
 apply plugin: 'com.android.application'
 
 android {
-
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
     defaultConfig {
         applicationId "com.github.obsessive.simplifyreader"
         minSdkVersion 10
@@ -56,8 +62,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.umeng:fb:latest.integration'
-    compile 'com.umeng.analytics:analytics:latest.integration'
+ //   compile 'com.umeng:fb:latest.integration'
+//    compile 'com.umeng.analytics:analytics:latest.integration'
     compile project(':library')
     compile project(':library_youku')
 }

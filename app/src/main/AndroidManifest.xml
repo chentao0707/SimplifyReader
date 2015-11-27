@@ -53,13 +53,6 @@
             android:name="client_secret"
             android:value="4b493b53b28194f9e23f3eca8cd673c8"/>
 
-        <!-- umeng ID-->
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="55af0b68e0f55a0e9e003fba"/>
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="Obsessive_Simplify_Reader"/>
 
         <activity
             android:name=".ui.activity.SplashActivity"
@@ -85,11 +78,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.ImagesDetail"/>
 
-        <activity
-            android:name=".ui.activity.FeedBackActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity
             android:name=".ui.activity.AboutUsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

@@ -18,7 +18,6 @@ package com.github.obsessive.simplifyreader.ui.activity.base;
 
 import com.github.obsessive.library.base.BaseLazyFragment;
 import com.github.obsessive.simplifyreader.view.base.BaseView;
-import com.umeng.analytics.MobclickAgent;
 
 /**
  * Author:  Tau.Chen
@@ -31,13 +30,12 @@ public abstract class BaseFragment extends BaseLazyFragment implements BaseView 
     @Override
     public void onResume() {
         super.onResume();
-        MobclickAgent.onPageStart(TAG_LOG);
+
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        MobclickAgent.onPageEnd(TAG_LOG);
     }
 
 

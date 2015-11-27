@@ -30,7 +30,5 @@ public interface SplashView {
 
     void initializeViews(String versionName,String copyright,int backgroundResId);
 
-    void initializeUmengConfig();
-
     void navigateToHomePage();
 }
