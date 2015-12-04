@@ -114,7 +114,7 @@ public class UriHelper {
         sb.append(ApiConstants.Urls.DOUBAN_PLAY_LIST_URLS);
         sb.append("?channel=");
         sb.append(channelId);
-        sb.append("&app_name=radio_desktop_win&version=100&type=&sid=0");
+        sb.append("&app_name=radio_android&version=100&type=&sid=0");
         return sb.toString().trim();
     }
 }
