@@ -128,7 +128,7 @@ public class SplashActivity extends BaseActivity implements SplashView {
 
     @Override
     public void initializeUmengConfig() {
-        AnalyticsConfig.setAppkey("55018d77fd98c5901e000a09");
+        AnalyticsConfig.setAppkey(this, "55018d77fd98c5901e000a09");
         AnalyticsConfig.setChannel("SimplifyReader");
     }
 
