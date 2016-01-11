@@ -151,7 +151,9 @@ public class MusicsFragment extends BaseFragment implements MusicsView {
     @Override
     public void onDetach() {
         super.onDetach();
-        mMusicsPresenter.onStopPlay();
+        if(mMusicsPresenter != null) {
+            mMusicsPresenter.onStopPlay();
+        }
         mContext.unregisterReceiver(mBundleBroadCast);
         mContext.unregisterReceiver(mPositionBroadCast);
         mContext.unregisterReceiver(mSecondProgressBroadCast);
