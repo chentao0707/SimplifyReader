@@ -161,7 +161,7 @@
 ###关于我
 
 * **QQ:** 1076559197
-* **QQ Tribe:** 271918140 [https://github.com/liaohuqiu/qq-tribe-rule](https://github.com/liaohuqiu/qq-tribe-rule)
+* **QQ Tribe:** 345470463
 * **Weibo:** [http://weibo.com/obsessive1990](http://weibo.com/obsessive1990)
 * **Email:** [1076559197@qq.com](mailto:1076559197@qq.com) | [tchen0707@gmail.com](mailto:tchen0707@gmail.com)
 * **Github:** [https://github.com/skillcollege](https://github.com/skillcollege)
