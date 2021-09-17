@@ -663,9 +663,8 @@ public class PluginImageAD extends PluginOverlay implements DetailMessage {
 		} else {
 			adImageView.setOnClickListener(null);
 		}
-		if (StaticsUtil.PLAY_TYPE_LOCAL.equals(mediaPlayerDelegate.videoInfo
-				.getPlayType())
-				&& mediaPlayerDelegate != null
+		if (mediaPlayerDelegate != null
+				&& StaticsUtil.PLAY_TYPE_LOCAL.equals(mediaPlayerDelegate.videoInfo.getPlayType())
 				&& mediaPlayerDelegate.pluginManager != null) {
 			mediaPlayerDelegate.pluginManager.onVideoInfoGetted();
 			mediaPlayerDelegate.pluginManager.onChangeVideo();
